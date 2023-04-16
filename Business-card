@@ -3,116 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            width: 100vw;
-            height: 100vh;
-            background: url(footer_bg.png);
-            background-size: cover;
-            display: flex;
-        }
-
-        .header {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 0.5vw;
-            box-sizing: border-box;
-            text-align: center;
-            font-size: 24px;
-            font-family: Arial, sans-serif; /* Установите желаемый шрифт или его альтернативы */
-        }
-
-        .header p {
-            font-size: 20px;
-            font-family: 'Times New Roman', serif; /* Установите желаемый шрифт или его альтернативы */
-        }
-
-        .bio {
-            width: 60%;
-        }
-
-        .header_btn {
-            cursor: pointer;
-        }
-
-        .header_btn:hover {
-            transform: scale(1.05);
-        }
-
-        main {
-            width: 100vw;
-            height: auto;
-        }
-
-        section {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 0 6vw;
-            box-sizing: border-box;
-            min-height: 50vh;
-        }
-
-        section h1 {
-            font-size: 4em;
-        }
-
-        .section_row {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .section_item {
-            height: 10vw;
-            margin: 0 4em 4em 4em;
-        }
-
-        .section_item img {
-            height: 100%;
-        }
-
-        .projects {
-            color: white;
-            background: black;
-        }
-
-        .github:hover {
-            transform: scale(1.05);
-            cursor: pointer;
-        }
-
-        footer {
-            width: 100vw;
-            height: 100px;
-            position: relative;
-            background-image: url(footer_bg.png);
-            background-size: cover;
-            background-position: center;
-        }
-
-        .footer_content {
-            width: 100%;
-            height: 100%;
-            backdrop-filter: brightness(50%);
-            -webkit-backdrop-filter: brightness(50%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f77600b8df.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -128,64 +19,55 @@
     <main>
         <section class="skills">
             <h1>Навыки</h1>
-<section class="skills">
-    <h1>Навыки</h1>
-    <div class="section_row">
-        <div class="section_item">
-            <img src="html_icon.png" alt="HTML">
-            <p>HTML</p>
+            <div class="section_row">
+                <div class="section_item github">
+                    <img src="html_logo.png" alt="">
+                </div>
+                <div class="section_item github">
+                    <img src="css_logo.png" alt="">
+                </div>
+                <div class="section_item github">
+                    <img src="js_logo.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <h1>Проекты</h1>
+            <div class="section_row">
+                <div class="section_item github">
+                    <a href="https://github.com/CodeWizard14" target="_blank">
+                        <img src="github_logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <h1>Контакты</h1>
+            <div class="section_row">
+                <div class="section_item github">
+                    <a href="https://vk.com/eropka_2009" target="_blank">
+                        <img src="vk_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="section_item github">
+                    <a href="https://t.me/Eropka0" target="_blank">
+                        <img src="tg_logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="section_item github">
+                    <a href="mailto:vlad@webref.ru" target="_blank">
+                        <img src="email_logo.png" alt="">
+                    </a>
+                </div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_content">
+            Создано мной в 2023 | Алгоритмика
         </div>
-        <div class="section_item">
-            <img src="css_icon.png" alt="CSS">
-            <p>CSS</p>
-        </div>
-        <div class="section_item">
-            <img src="js_icon.png" alt="JavaScript">
-            <p>JavaScript</p>
-        </div>
-        <div class="section_item">
-            <img src="python_icon.png" alt="Python">
-            <p>Python</p>
-        </div>
-    </div>
-</section>
-<section class="projects">
-    <h1>Проекты</h1>
-    <div class="section_row">
-        <div class="section_item">
-            <img src="project1.png" alt="Проект 1">
-            <p>Проект 1</p>
-        </div>
-        <div class="section_item">
-            <img src="project2.png" alt="Проект 2">
-            <p>Проект 2</p>
-        </div>
-        <div class="section_item">
-            <img src="project3.png" alt="Проект 3">
-            <p>Проект 3</p>
-        </div>
-        <div class="section_item">
-            <img src="project4.png" alt="Проект 4">
-            <p>Проект 4</p>
-        </div>
-    </div>
-</section>
-</main>
-<footer>
-    <div class="footer_content">
-        <p>Связаться со мной</p>
-        <div class="footer_icons">
-            <a href="https://github.com/egorpotanin" target="_blank" class="github">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/egorpotanin" target="_blank" class="linkedin">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:egorpotanin@example.com" class="email">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
-    </div>
-</footer>
+    </footer>
 </body>
 </html>
